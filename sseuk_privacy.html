@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="쓰윽: 얼마나 썼나 - 가계부 앱의 개인정보 처리방침입니다.">
+    <title>개인정보 처리방침 - 쓰윽</title>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', 'Malgun Gothic', dotum, sans-serif;
+            line-height: 1.7;
+            color: #334155;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 24px 16px 48px;
+            background: linear-gradient(135deg, #e8eef8 0%, #f1f5f9 50%, #ecfdf5 100%);
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 28px 24px;
+            box-shadow: 0 8px 24px rgba(18, 47, 91, 0.12);
+            border-top: 6px solid transparent;
+            border-image: linear-gradient(90deg, #122f5b, #fb923c, #10b981) 1;
+        }
+        h1 { color: #122f5b; font-size: 1.5rem; margin: 0 0 16px; }
+        h2 { color: #1e293b; font-size: 1.05rem; margin-top: 28px; }
+        p, li { font-size: 14px; }
+        body, td { word-break: keep-all; overflow-wrap: anywhere; }
+        .table-wrap { overflow-x: auto; }
+        a { color: #1d4ed8; }
+        .highlight {
+            background: #ecfdf5;
+            border-left: 4px solid #10b981;
+            padding: 12px 14px;
+            border-radius: 8px;
+        }
+        table { border-collapse: collapse; width: 100%; font-size: 14px; }
+        th, td { border: 1px solid #e2e8f0; padding: 8px; text-align: left; vertical-align: top; }
+        th { background: #f8fafc; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>개인정보 처리방침</h1>
+
+        <p>본 개인정보 처리방침은 <strong>쓰윽: 얼마나 썼나 - 가계부</strong>(이하 "앱", 패키지명 com.gina.mycardexpense)이
+            이용자의 정보를 어떻게 처리하는지 설명합니다.</p>
+
+        <p class="highlight"><strong>요약</strong><br>
+            앱은 휴대폰에 도착한 카드 결제 알림을 읽어 지출 내역을 <strong>이 기기 안에만</strong> 저장합니다.
+            회원가입·로그인이 없고, 카드 결제 내역을 앱 개발자나 외부 서버로 <strong>전송하지 않습니다.</strong>
+            광고(Google AdMob)와 인앱 결제(Google Play)에는 Google의 서비스가 사용됩니다.</p>
+
+        <h2>1. 처리하는 정보와 목적</h2>
+        <div class="table-wrap"><table>
+            <tr><th>정보</th><th>목적</th><th>저장 위치</th></tr>
+            <tr>
+                <td>카드 결제 알림의 내용<br>(발신번호 또는 채널명, 카드사·카드명, 가맹점, 금액, 결제 일시, 승인/취소 구분, 알림 원문)</td>
+                <td>월별·연도별·카드사별 지출 내역 표시</td>
+                <td>이 기기 안</td>
+            </tr>
+            <tr>
+                <td>결제처럼 보이지만 인식하지 못한 문자 (최근 50건)</td>
+                <td>이용자가 카드사 발신번호를 직접 지정해 다시 인식하도록 돕기 위함</td>
+                <td>이 기기 안</td>
+            </tr>
+            <tr>
+                <td>이용자가 입력한 카드사 발신번호 설정, 직접 붙여 넣은 결제 문자</td>
+                <td>카드사 판별 및 결제 내역 등록</td>
+                <td>이 기기 안</td>
+            </tr>
+            <tr>
+                <td>광고 제거 구매 여부</td>
+                <td>광고 표시 여부 결정</td>
+                <td>이 기기 안 (구매 기록 자체는 Google Play 계정에 보관)</td>
+            </tr>
+        </table></div>
+
+        <h2>2. 알림 접근 권한의 사용</h2>
+        <p>앱은 카드 결제 내역을 자동으로 기록하기 위해 <strong>알림 접근 권한</strong>을 사용합니다. 처음 실행할 때 사용 목적을 안내하고, 이용자가 직접 허용한 경우에만 동작합니다.</p>
+        <ul>
+            <li>읽는 대상: 문자 앱(삼성 메시지, Google 메시지)과 카카오톡의 알림</li>
+            <li>저장하는 알림: 카드 승인·취소·승인거절 등 <strong>카드 결제로 판단된 알림만</strong> 저장합니다. 개인 대화 등 결제와 관계없는 알림은 저장하지 않습니다.</li>
+            <li>권한은 휴대폰의 설정 &gt; 알림 접근(또는 앱 설정 화면)에서 언제든지 해제할 수 있으며, 해제하면 더 이상 알림을 읽지 않습니다.</li>
+        </ul>
+
+        <h2>3. 정보의 외부 전송 및 백업</h2>
+        <ul>
+            <li>카드 결제 내역과 알림 내용은 앱 개발자의 서버나 제3자에게 <strong>전송하지 않습니다.</strong> 앱은 이를 위한 서버를 운영하지 않습니다.</li>
+            <li>Google 드라이브 등 <strong>클라우드 자동 백업 대상에서 모든 앱 데이터를 제외</strong>했습니다.</li>
+            <li>새 휴대폰으로 데이터를 직접 옮기는 기기 간 전송(케이블·근거리 무선) 기능을 사용하면, 이 기능이 지원하는 범위에서 데이터가 새 기기로 옮겨질 수 있습니다.</li>
+        </ul>
+
+        <h2>4. 광고 (Google AdMob)</h2>
+        <ul>
+            <li>앱은 무료 제공을 위해 Google AdMob 배너 광고를 표시합니다.</li>
+            <li>앱은 <strong>비맞춤형 광고</strong>만 요청합니다. 이용자의 관심사나 행동에 기반한 맞춤형 광고를 요청하지 않습니다.</li>
+            <li>광고 제공, 노출 빈도 제한, 부정 클릭 방지 등을 위해 Google이 광고 ID, 기기 정보, IP 주소 등의 정보를 수집할 수 있습니다. 이 정보는 Google의 정책에 따라 처리됩니다.
+                (<a href="https://policies.google.com/technologies/ads?hl=ko" target="_blank" rel="noopener">Google 광고 정책</a>,
+                <a href="https://policies.google.com/privacy?hl=ko" target="_blank" rel="noopener">Google 개인정보처리방침</a>)</li>
+            <li>카드 결제 내역과 알림 내용은 광고 SDK에 전달하지 않습니다.</li>
+            <li>유럽경제지역(EEA) 등 법령상 동의가 필요한 지역에서는 광고 전에 동의를 받으며, 앱의 설정 화면에서 동의 내용을 변경할 수 있습니다.</li>
+            <li>광고 제거를 구매한 이용자에게는 광고 SDK를 초기화하지 않습니다.</li>
+        </ul>
+
+        <h2>5. 인앱 결제 (Google Play)</h2>
+        <p>광고 제거 구매와 프로모션 코드 사용은 Google Play 결제 시스템으로 처리됩니다. 결제 수단 등 결제 정보는 Google이 처리하며, 앱은 구매 여부만 확인합니다.
+            (<a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice&amp;ldl=ko" target="_blank" rel="noopener">Google 결제 개인정보처리방침</a>)</p>
+
+        <h2>6. 보유 기간 및 파기</h2>
+        <ul>
+            <li>앱 데이터는 이용자가 삭제하기 전까지 이 기기 안에만 보관합니다.</li>
+            <li>앱을 삭제하거나 휴대폰의 설정 &gt; 애플리케이션 &gt; 쓰윽 &gt; 저장공간 &gt; 데이터 삭제를 실행하면 모든 앱 데이터가 즉시 삭제됩니다.</li>
+            <li>앱 메뉴의 <strong>결제 내역이 아니에요</strong>에서 기록을 개별 삭제하거나, 특정 발신번호를 제외하면서 그 번호의 기록을 함께 삭제할 수 있습니다.</li>
+        </ul>
+
+        <h2>7. 이용자의 권리</h2>
+        <p>모든 데이터가 이용자의 기기 안에만 있으므로, 이용자는 앱과 휴대폰 설정에서 직접 데이터를 확인·삭제할 수 있습니다. 앱 개발자는 이용자의 카드 결제 내역을 보관하지 않으므로 조회·제공할 수 없습니다.
+            광고와 관련된 정보는 휴대폰 설정의 Google &gt; 광고에서 광고 ID를 재설정하거나 삭제할 수 있습니다.</p>
+
+        <h2>8. 아동의 개인정보</h2>
+        <p>본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 알면서 수집하지 않습니다.</p>
+
+        <h2>9. 처리방침의 변경</h2>
+        <p>본 처리방침이 변경되는 경우 이 페이지를 통해 공지합니다.</p>
+
+        <h2>10. 개인정보 보호책임자 및 문의처</h2>
+        <ul>
+            <li>문의 메일: <a href="mailto:wizand.gina@gmail.com">wizand.gina@gmail.com</a></li>
+        </ul>
+
+        <p>공고일자: 2026년 10월 15일<br>시행일자: 2026년 10월 15일</p>
+    </div>
+</body>
+</html>
